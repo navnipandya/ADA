@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int mul(int base,int a);
+int main()
+{
+	int x,y,result;
+	cout<<"value of x";
+	cin>>x;
+	cout<<"value of y";
+	cin>>y;
+	result=mul(x,y);
+	cout<<result;
+}
+int mul(int base,int a)
+{
+	if(a==1)
+	{
+	return base;
+}
+else
+{
+
+	return(base+mul(base,a-1));
+	
+}
+
+}
