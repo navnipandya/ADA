@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main() {
+	cout<<"Enter Array sixze :   ";
+	int size;
+	cin>>size;
+	int array[size], n,i;
+	
+	for (int j=0;j<size;j++) {
+		cout<<"Enter "<<j<<" Element: ";
+		cin>>array[j];
+	}
+	for (int a=0;a<size;a++) {
+		cout<<"array[ "<<a<<" ]  =  ";
+		cout<<array[a]<<endl;
+	}
+	cout<<"Enter no to search";
+	cin>>n;
+	for (i=0;i<n;i++) {
+		if(n==array[i]) {
+			cout<<"no. Found At Index Number :  "<<i<<endl;
+			break;
+		}
+	}
+	if(i != n) {
+		cout<<"no. found at index :  "<<i;
+	} else {
+		cout<<"no. not found";
+	}
+	return 0;
+}
